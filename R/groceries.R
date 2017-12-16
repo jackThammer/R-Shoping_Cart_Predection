@@ -37,4 +37,18 @@ write.csv(df_itemList,"2_Predicted_Data.csv", row.names = TRUE,quote = FALSE)
 library(stringr)
 write.csv(str_split_fixed(df_basket$rules, " => ", 2),"1_Final_Data.csv", row.names = TRUE,quote = FALSE)
 
+#df_basket[] <- lapply(df_basket, gsub, pattern='{', replacement='')
+
+dataset=str_split_fixed(df_basket$rules, " => ", 2)
+
+
+#Insert into SQL table
+install.packages("RMySQL")
+library(DBI)
+
+
+con=dbConnect(RMySQL::MySQL(),dbname="local_schema",host="localhost",port=3306,user="root",password="")
+
+dbWriteTable(conn = con, name = 'dataset', value = as.data.frame(dataset))
+
 
