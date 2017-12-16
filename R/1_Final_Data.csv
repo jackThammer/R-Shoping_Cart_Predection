@@ -1,0 +1,11 @@
+,V1,V2
+1,{yogurt},{whole milk}
+2,{whole milk},{yogurt}
+3,{soda},{whole milk}
+4,{whole milk},{soda}
+5,{rolls/buns},{other vegetables}
+6,{other vegetables},{rolls/buns}
+7,{rolls/buns},{whole milk}
+8,{whole milk},{rolls/buns}
+9,{other vegetables},{whole milk}
+10,{whole milk},{other vegetables}
