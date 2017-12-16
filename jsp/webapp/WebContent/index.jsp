@@ -15,7 +15,15 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -30,7 +38,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-input[type=reset]:hover {
 
 div {
     border-radius: 5px;
@@ -51,11 +58,11 @@ div {
                 <tbody>
                     <tr>
                         <td>User Name</td>
-                        <td><input type="text" name="uname" value="" /></td>
+                        <td><input type="text" name="uname" placeholder="UserName.." /></td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input type="password" name="pass" value="" /></td>
+                        <td><input type="password" name="pass" placeholder="Password.." /></td>
                     </tr>
                     <tr>
                     	<td></td>

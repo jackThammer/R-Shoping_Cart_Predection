@@ -52,7 +52,7 @@ div {
 <h3>Lets Try the Predictition of the Products in the shopping cart</h3>
 
 <div>
-  <form action="/action_page.jsp">
+  <form method="post" action="predict.jsp">
     <label for="pname">Product Name</label>
     <input type="text" id="pname" name="productname" placeholder="Your Product name..">
 
