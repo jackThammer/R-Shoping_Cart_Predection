@@ -1,4 +1,5 @@
 <%@ page import ="java.sql.*" %>
+<link rel="stylesheet" href="css/style.css">
 <%
     String productname = request.getParameter("productname");    
    // String pwd = request.getParameter("pass");
@@ -16,7 +17,7 @@
        }
     */
   
-   if (rs.isBeforeFirst() ) {
+  /* if (rs.isBeforeFirst() ) {
        // session.setAttribute("userid", userid);
        while(rs.next()){
         out.println("The Entered Product ==> " + productname);
@@ -28,6 +29,32 @@
     } else {
         out.println("Invalid password <a href='index.jsp'>try again</a>");
     }
-
-    
+  */
 %>
+
+<table cellpadding="15" border="1"">
+<%
+if (rs.isBeforeFirst() ) {
+%>
+<tr>
+<th>Entered Product</th>
+<th>Predicted Products</th>
+</tr>
+<%
+while (rs.next()) {
+%>
+<tr>
+<td><%=productname%></td>
+<td><%=rs.getString(1)%></td>
+</tr>
+<% }} else {
+	%>
+   <h1>"Insuffecient data to Predict for this data"</h1>
+<%} %>
+
+</font>
+<font size="+3" color="red"></b>
+<%
+
+%>
+</table>

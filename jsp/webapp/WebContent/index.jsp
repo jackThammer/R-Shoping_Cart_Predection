@@ -35,15 +35,8 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
+
 </style>
     </head>
     <body>
