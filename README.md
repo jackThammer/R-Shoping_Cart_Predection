@@ -1,4 +1,5 @@
 # R_Shoping_Cart_Predection
+> Project for the IHLP Program at NJIT
 
 With frequent item sets and association rules of high confidence we can conclude that if a rule holds 90% confidence, it is likely to hold for the next customer. It helps customers in buying items they may often forget. Or items they may need for a purpose but are unaware of.
 
@@ -18,4 +19,4 @@ The rules generated were of a large scale and needed to be pruned and tuned to o
   * Run on server
   * Code wount need much changes
 
-> Project for the IHLP Program at NJIT
+
