@@ -17,3 +17,5 @@ The rules generated were of a large scale and needed to be pruned and tuned to o
   * Also needs database connection i.e the same table that is created in Setp 1
   * Run on server
   * Code wount need much changes
+
+> Project for the IHLP Program at NJIT
